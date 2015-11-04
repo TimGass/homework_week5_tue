@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <main>
+    </main>
+    <script type="text/template" id="loading">
+      <h1>Loading <%= ellipses %></h1>
+    </script>
+    <script type="text/template" id="menu">
+      <a href="#play" class="play-link">Play!</a>
+      <a href="#boards" class="boards-link">Leaderboards</a>
+      <a href="#settings" class="settings-link">Settings</a>
+    </script>
+    <script type="text/template" id="play">
+      <h1>Put in cartridge!</h1>
+      <a href="#menu" class="back">Back</a>
+    </script>
+    <script type="text/template" id="settings">
+      <a href="#">Sound</a>
+      <a href="#">Graphics</a>
+      <a href="#">Controls</a>
+      <a href="#menu" class="back">Back</a>
+    </script>
+    <script type="text/template" id="boards">
+      <h1>Overachiever's Board</h1>
+      <ol>
+        <li>Top Player</li>
+        <li>Second best</li>
+        <li>Lame</li>
+        <li>Shameful</li>
+        <li>Do we have to mention this guy?</li>
+      </ol>
+      <a href="#menu" class="back">Back</a>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

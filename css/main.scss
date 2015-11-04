@@ -1,0 +1,109 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+*{
+  margin: 0px;
+}
+
+a.back{
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  @include span-columns(2);
+  padding: 20px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #FFF;
+  background-color: red;
+}
+
+main{
+  @include outer-container(100%);
+  background-color: green;
+  height: 100vh;
+}
+
+.loading{
+  background-color: yellow;
+  @include span-columns(12);
+  margin-top: 42vh;
+  text-align: center;
+}
+
+.menu{
+  @include span-columns(4);
+  @include shift(4);
+  padding-top: 10vh;
+  text-align: center;
+
+  a{
+    @include span-columns(12);
+    padding: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: red;
+  }
+}
+
+.play{
+  @include span-columns(4);
+  @include shift(4);
+  padding-top: 10vh;
+  text-align: center;
+
+  h1{
+    border-radius: 25% 25% 0 0;
+    padding: 50px;
+    background-color: gray;
+  }
+}
+
+.boards{
+  @include span-columns(12);
+  text-align: center;
+  color: magenta;
+  ol{
+    @include span-columns(4);
+    @include shift(4.2);
+  }
+  li{
+    text-align: left;
+    padding: 30px 0px;
+    list-style: decimal;
+    list-style-position: outside;
+    color: cyan;
+  }
+}
+
+.settings{
+  @include span-columns(4);
+  @include shift(4);
+  padding-top: 10vh;
+  text-align: center;
+
+  a{
+    @include span-columns(12);
+    padding: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: red;
+
+     &.back{
+       position: absolute;
+       bottom: -30px;
+       left: 20px;
+       @include span-columns(2);
+       padding: 20px;
+       margin-bottom: 50px;
+       font-size: 24px;
+       text-decoration: none;
+       color: #FFF;
+       background-color: red;
+     }
+  }
+}
